@@ -1,131 +1,25 @@
-html, body {
-  margin: 0 auto;
-  background-color: #222222;
-  color: white;
-  font-family: 'Microsoft JhengHei', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  width: 100%;
-  height: 100%;
-  overflow-x: hidden;
-}
+html, body { margin: 0 auto; background-color: #222222; color: white; font-family: "Microsoft JhengHei", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; width: 100%; height: 100%; overflow-x: hidden; }
 
-header {
-  background-color: #333333;
-  text-align: center;
-}
+header { background-color: #333333; text-align: center; }
 
-.info {
-  margin: 24px 0px;
-  text-align: center;
-}
+.info { margin: 24px 0px; text-align: center; }
 
-.link {
-  position: relative;
-  height: 60%;
-  margin: 32px 0;
-  overflow-block: hidden;
-}
+.link { position: relative; height: 60%; margin: 32px 0; overflow-block: hidden; }
 
-@media screen and (orientation: landscape) {
-  header {
-    padding: 6px 0;
-    font-size: 20px;
-  }
-  main {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    display: -webkit-flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-  .link {
-    margin: 32px 16px;
-    -webkit-box-flex: 1;
-        -ms-flex: 1 0 25%;
-            flex: 1 0 25%;
-    text-align: center;
-  }
-}
+@media screen and (orientation: landscape) { header { padding: 6px 0; font-size: 20px; }
+  main { display: -webkit-box; display: -ms-flexbox; display: flex; display: -webkit-flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; -ms-flex-pack: distribute; justify-content: space-around; -ms-flex-wrap: wrap; flex-wrap: wrap; }
+  .link { margin: 32px 16px; -webkit-box-flex: 1; -ms-flex: 1 0 25%; flex: 1 0 25%; text-align: center; } }
 
-@media screen and (orientation: portrait) {
-  header {
-    padding: 10px 0;
-    font-size: 24px;
-  }
-}
+@media screen and (orientation: portrait) { header { padding: 10px 0; font-size: 24px; } }
 
-@media screen and (orientation: portrait) {
-  .link > img {
-    width: 100%;
-    -webkit-filter: brightness(0.5);
-            filter: brightness(0.5);
-  }
-  .link > div {
-    color: white;
-    font-size: 50px;
-    text-align: center;
-    width: 100%;
-    position: absolute;
-    top: 50%;
-    z-index: 3;
-    -webkit-transform: translate(0%, -50%);
-            transform: translate(0%, -50%);
-  }
-  .link > div > p {
-    font-size: 20px;
-  }
-}
+@media screen and (orientation: portrait) { .link > img { width: 100%; -webkit-filter: brightness(0.5); filter: brightness(0.5); }
+  .link > div { color: white; font-size: 50px; text-align: center; width: 100%; position: absolute; top: 50%; z-index: 3; -webkit-transform: translate(0%, -50%); transform: translate(0%, -50%); }
+  .link > div > p { font-size: 20px; } }
 
-@media screen and (orientation: landscape) and (min-width: 900px) {
-  .link .link {
-    -ms-flex-preferred-size: 21%;
-        flex-basis: 21%;
-  }
-  .link > img {
-    width: 21vw;
-  }
-}
+@media screen and (orientation: landscape) and (min-width: 900px) { .link .link { -ms-flex-preferred-size: 21%; flex-basis: 21%; }
+  .link > img { width: 21vw; } }
 
-@media screen and (orientation: landscape) {
-  .link > img {
-    width: 25vw;
-    border-radius: 5px;
-    -webkit-filter: brightness(0.5) blur(1px);
-            filter: brightness(0.5) blur(1px);
-    -webkit-transform: scale(0.95);
-            transform: scale(0.95);
-    -webkit-transition: -webkit-filter 0.3s, -webkit-transform 0.3s;
-    transition: -webkit-filter 0.3s, -webkit-transform 0.3s;
-    transition: filter 0.3s, transform 0.3s;
-    transition: filter 0.3s, transform 0.3s, -webkit-filter 0.3s, -webkit-transform 0.3s;
-  }
-  .link > div {
-    color: white;
-    font-size: 20px;
-    text-decoration: none;
-    -webkit-filter: brightness(0.5) blur(1px);
-            filter: brightness(0.5) blur(1px);
-    -webkit-transform: scale(0.95);
-            transform: scale(0.95);
-    -webkit-transition: -webkit-filter 0.3s, -webkit-transform 0.3s;
-    transition: -webkit-filter 0.3s, -webkit-transform 0.3s;
-    transition: filter 0.3s, transform 0.3s;
-    transition: filter 0.3s, transform 0.3s, -webkit-filter 0.3s, -webkit-transform 0.3s;
-  }
-  .link > div > p {
-    font-size: 15px;
-  }
-  .link:hover > img, .link:hover > div {
-    -webkit-filter: none;
-            filter: none;
-    -webkit-transform: none;
-            transform: none;
-  }
-}
-/*# sourceMappingURL=index.css.map */
+@media screen and (orientation: landscape) { .link > img { width: 25vw; border-radius: 5px; -webkit-filter: brightness(0.5) blur(1px); filter: brightness(0.5) blur(1px); -webkit-transform: scale(0.95); transform: scale(0.95); -webkit-transition: -webkit-filter 0.3s, -webkit-transform 0.3s; transition: -webkit-filter 0.3s, -webkit-transform 0.3s; transition: filter 0.3s, transform 0.3s; transition: filter 0.3s, transform 0.3s, -webkit-filter 0.3s, -webkit-transform 0.3s; }
+  .link > div { color: white; font-size: 20px; text-decoration: none; -webkit-filter: brightness(0.5) blur(1px); filter: brightness(0.5) blur(1px); -webkit-transform: scale(0.95); transform: scale(0.95); -webkit-transition: -webkit-filter 0.3s, -webkit-transform 0.3s; transition: -webkit-filter 0.3s, -webkit-transform 0.3s; transition: filter 0.3s, transform 0.3s; transition: filter 0.3s, transform 0.3s, -webkit-filter 0.3s, -webkit-transform 0.3s; }
+  .link > div > p { font-size: 15px; }
+  .link:hover > img, .link:hover > div { -webkit-filter: none; filter: none; -webkit-transform: none; transform: none; } }
