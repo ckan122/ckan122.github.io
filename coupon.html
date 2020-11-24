@@ -15,14 +15,14 @@
 			}
 			header {background-color: #333333; text-align: center;}
 			.link {position: relative; height: 60%; margin: 32px 0; overflow-block: hidden;}
-			.info {margin: 16px 0; text-align: center;}
-			.link > a {display: flex; justify-content: center;}
+			.info {margin: 24px 12px; text-align: center;}
+			.link > a {justify-content: center;}
 
 			@media screen and (orientation: landscape) {
 				header {padding: 6px 0; font-size: 20px;}
 				main {
-					display: flex; flex-direction: row; justify-content: space-around;
-					flex-wrap: wrap;
+					display: flex; display: -webkit-flex;
+					flex-direction: row; justify-content: space-around; flex-wrap: wrap;
 				}
 				.link {margin: 32px 16px; flex: 1 0 25%; text-align: center;}
 				.link > a > img {width: 25vw; filter: brightness(0.7) blur(1px); border-radius: 5px;}
@@ -30,20 +30,24 @@
 					.link {flex: 1 0 21%;}
 					.link > a > img {width: 21vw;}
 				}
-				.link > a > span {color: white; font-size: 20px; text-decoration: none;}
-				.link > a > span > p {font-size: 15px;}
+				.link > a > div {color: white; font-size: 20px; text-decoration: none;}
+				.link > a > div > p {font-size: 15px;}
 			}
+
 			@media screen and (orientation: portrait) {
 				header {padding: 10px 0; font-size: 24px;}
-				main {display: contents;}
-
-				.link > a > img {width: 100%; height: auto; filter: brightness(0.5) blur(3px);}
-				.link > a > span {
-					color: white; font-size: 50px; text-align: center;
+				.link > a > img {width: 100%; filter: brightness(0.5) blur(3px);}
+				.link > a > div {
+					color: white; font-size: 50px; text-align: center; width: 100%;
 					position: absolute; top: 50%; z-index: 3; transform: translate(0%, -50%);
 				}
-				.link > a > span > p {font-size: 20px;}
+				.link > a > div > p {font-size: 20px;}
 			}
+
+      @keyframes fadeIn {
+      0% {opacity:0;}
+      100% {opacity:1;}
+      }
 		</style>
 		<header>優惠券領取指南</header>
 		<div class="info">
@@ -72,7 +76,7 @@
 					<div class="link">
 						<a href="https://lin.ee/${now.link}">
 							<img src="img/${now.image}" alt="${now.title}"><br>
-							<span>${now.title}<p>${now.desc}</p></span>
+							<div>${now.title}<p>${now.desc}</p></div>
 						</a>
 					</div>`);
 				});
