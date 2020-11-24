@@ -2,4 +2,19 @@
 
 .link {
     @include link-style();
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.swal2-image {
+    max-height: 60vh;
+    border-radius: 5px;
+}
+
+@media screen and (orientation: landscape) {
+    .swal2-popup {
+        flex-direction: row;
+    }
 }
