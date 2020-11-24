@@ -16,7 +16,6 @@
 			header {background-color: #333333; text-align: center;}
 			.link {position: relative; height: 60%; margin: 32px 0; overflow-block: hidden;}
 			.info {margin: 24px 12px; text-align: center;}
-			.link > a {justify-content: center;}
 
 			@media screen and (orientation: landscape) {
 				header {padding: 6px 0; font-size: 20px;}
@@ -25,10 +24,13 @@
 					flex-direction: row; justify-content: space-around; flex-wrap: wrap;
 				}
 				.link {margin: 32px 16px; flex: 1 0 25%; text-align: center;}
-				.link > a > img {width: 25vw; filter: brightness(0.7) blur(1px); border-radius: 5px;}
+				.link > a > img {
+					width: 25vw; border-radius: 5px;
+					filter: brightness(0.5) blur(1px); transform: scale(0.95); transition: 300ms;
+				}
+				.link:hover > a > img {filter: none; transform: none;}
 				@media screen and (min-width: 900px) {
-					.link {flex: 1 0 21%;}
-					.link > a > img {width: 21vw;}
+					.link {flex-basis: 21%;} .link > a > img {width: 21vw;}
 				}
 				.link > a > div {color: white; font-size: 20px; text-decoration: none;}
 				.link > a > div > p {font-size: 15px;}
@@ -43,11 +45,6 @@
 				}
 				.link > a > div > p {font-size: 20px;}
 			}
-
-      @keyframes fadeIn {
-      0% {opacity:0;}
-      100% {opacity:1;}
-      }
 		</style>
 		<header>優惠券領取指南</header>
 		<div class="info">
@@ -62,8 +59,7 @@
 				"desc": "使用本優惠券可享額外九折優惠",
 				"link": "g2wKkCZ",
 				"image": "ck210.png"
-			},
-			{
+			}, {
 				"title": "建中軍武社",
 				"desc": "使用本優惠券享八折優惠",
 				"link": "opwP1Tp",
