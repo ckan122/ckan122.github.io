@@ -6,45 +6,7 @@
 		<title>優惠券領取指南——建中122校慶園遊會（非官方）</title>
 	</head>
 	<body>
-		<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-		<style>
-			html, body {
-				margin: 0 auto; background-color: #222222; color: white;
-				font-family: 'Microsoft JhengHei', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-				width: 100%; height: 100%; overflow-x: hidden;
-			}
-			header {background-color: #333333; text-align: center;}
-			.link {position: relative; height: 60%; margin: 32px 0; overflow-block: hidden;}
-			.info {margin: 16px 0; text-align: center;}
-			.link > a {display: flex; justify-content: center;}
-
-			@media screen and (orientation: landscape) {
-				header {padding: 6px 0; font-size: 20px;}
-				main {
-					display: flex; flex-direction: row; justify-content: space-around;
-					flex-wrap: wrap;
-				}
-				.link {margin: 32px 16px; flex: 1 0 25%; text-align: center;}
-				.link > a > img {width: 25vw; filter: brightness(0.7) blur(1px); border-radius: 5px;}
-				@media screen and (min-width: 900px) {
-					.link {flex: 1 0 21%;}
-					.link > a > img {width: 21vw;}
-				}
-				.link > a > span {color: white; font-size: 20px; text-decoration: none;}
-				.link > a > span > p {font-size: 15px;}
-			}
-			@media screen and (orientation: portrait) {
-				header {padding: 10px 0; font-size: 24px;}
-				main {display: contents;}
-
-				.link > a > img {width: 100%; height: auto; filter: brightness(0.5) blur(3px);}
-				.link > a > span {
-					color: white; font-size: 50px; text-align: center;
-					position: absolute; top: 50%; z-index: 3; transform: translate(0%, -50%);
-				}
-				.link > a > span > p {font-size: 20px;}
-			}
-		</style>
+		<link rel="stylesheet" href="style.css">
 		<header>優惠券領取指南</header>
 		<div class="info">
 			點選下列任意圖片即可前往應用程式領取對應優惠券～<br>
@@ -52,6 +14,7 @@
 			每一張優惠券都各自能夠領取一次
 		</div>
 		<main></main>
+		<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 		<script>
 			var coupon_list = [{
 				"title": "210角落廢物",
