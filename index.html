@@ -14,34 +14,8 @@
 		</div>
 		<main></main>
 		<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-		<script>
-			var coupon_list = [{
-				"id": "ck210",
-				"title": "210角落廢物",
-				"desc": "爆米花&氣泡飲",
-				"image": "ck210.png"
-			}, {
-				"id": "ckmc",
-				"title": "建中軍武社",
-				"desc": "實彈射擊體驗",
-				"image": "ckmc.png"
-			}, {
-				"id": "test",
-				"title": "徵的就是你",
-				"desc": "加入十班聯盟湊齊十個攤位吧",
-				"image": "test/1.png"
-			}];
-
-			$(function () {
-				coupon_list.forEach(function (now, id) {
-					$("main").append(`
-					<div class="link">
-						<img src="img/${now.image}" alt="${now.title}">
-						<div>${now.title}<p>${now.desc}</p></div>
-					</div>`);
-				});
-			});
-		</script>
+		<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+		<script src="script.js"></script>
 	</body>
 </body>
 </html>
