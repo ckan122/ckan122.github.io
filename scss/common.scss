@@ -45,14 +45,14 @@
     & > img {
         width: 25vw;
         border-radius: 5px;
-        @include blur-and-scale();
+        @include blur-and-scale(0.5px);
     }
 
     & > div {
         color: white;
         font-size: 20px;
         text-decoration: none;
-        @include blur-and-scale();
+        @include blur-and-scale(0px);
         & > p {
             font-size: 15px;
         }
@@ -67,8 +67,8 @@
     }
 }
 
-@mixin blur-and-scale {
-    filter: brightness(0.5) blur(1px);
+@mixin blur-and-scale($blurSize) {
+    filter: brightness(0.5) blur($blurSize);
     transform: scale(0.95);
     transition: filter 0.3s, transform 0.3s;
 }
