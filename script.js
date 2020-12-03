@@ -1,21 +1,17 @@
 var stand_list = [{
-    "title": "210角落廢物",
-    "desc": "爆米花&氣泡飲",
+    "title": "210 角落廢物",
+    "desc": "酥脆爆米花 & 清爽氣泡飲",
     "image": "ck210.png",
     "html": `
-    酥脆爆米花搭配順口氣泡飲～
-    掰不下去了～
+    <a href="doc/210.pdf"><img src="img/ck210_desc.png" style="max-height: 80vh; max-width: 80vw;"></a>
     `
 }, {
     "title": "建中軍武社",
     "desc": "實彈射擊體驗",
     "image": "ckmc.png",
-    "html": ``
-}, {
-    "title": "徵的就是你",
-    "desc": "加入十班聯盟湊齊十個攤位吧",
-    "image": "test/1.png",
-    "html": `詳情請洽<strong>210黃庭耀</strong>或<strong>210毛柏毅</strong>`
+    "html": `
+    有機會獲得精美好禮OWO
+    `
 }];
 
 $(function () {
