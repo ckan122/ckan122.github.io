@@ -9,13 +9,18 @@
 }
 
 .swal2-image {
-    // max-height: 60vh;
-    // border-radius: 5px;
-    display: none;
+    max-height: 60vh;
+    border-radius: 5px;
 }
 
 @media screen and (orientation: landscape) {
     .swal2-popup {
         flex-direction: row;
+    }
+}
+
+@media screen and (orientation: portrait) {
+    .swal2-image {
+        display: none;
     }
 }
