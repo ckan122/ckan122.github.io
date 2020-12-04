@@ -3,7 +3,7 @@ var stand_list = [{
     "desc": "酥脆爆米花 & 清爽氣泡飲",
     "image": "ck210.png",
     "html": `
-    <a href="doc/210.pdf"><img src="img/ck210_desc.png" style="max-height: 80vh; max-width: 80vw;"></a>
+    <a href="doc/210.pdf"><img src="img/ck210_desc.png" style="max-height: 80vh; max-width: 45vw;"></a>
     `
 }, {
     "title": "建中軍武社",
